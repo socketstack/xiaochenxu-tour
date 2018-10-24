@@ -1,0 +1,25 @@
+.routeTap{
+  height:auto;
+  margin-bottom: 20rpx;
+  border:1rpx solid #ccc;
+}
+.routeTap image{
+  display: block;
+  width:94%;
+  height:400rpx;
+  margin:0 auto;
+  margin-bottom:20rpx;
+}
+.routeTap text{
+  display: block;
+  width:94%;
+  margin:0 auto;
+  height:auto;
+  line-height: 50rpx;
+  font-size:35rpx;
+  color:rgb(117, 116, 116);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 11;
+  overflow: hidden;
+}

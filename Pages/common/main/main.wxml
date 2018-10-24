@@ -1,0 +1,7 @@
+<template name="mainCellTemplate">
+  <view class="mainTab">
+  <image src="{{item.imgurl}}"></image>
+  <text class="title">景点:{{item.title}}</text>
+  <text class="content">{{item.content}}</text>
+</view>
+</template>

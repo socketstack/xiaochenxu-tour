@@ -1,0 +1,8 @@
+text{
+  display: block;
+  height:400rpx;
+  line-height: 50rpx;
+  width:95%;
+  margin: 0 auto;
+  font-size: 40rpx;
+}

@@ -1,0 +1,9 @@
+<template name="hotelCellTemplate">
+  <view class="hotelTap">
+  <image src="{{item.logourl}}"></image>
+  <text class="hotelname">{{item.hotelname}}</text>
+  <text class="hotelscore">评分:{{item.hotelscore}}</text>
+  <text class="hotelprice">价格:¥{{item.hotelprice}}<text class="small">起</text></text>
+  <text class="reserve" catchtap="showtip">预定</text>
+</view>
+</template>

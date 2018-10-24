@@ -1,0 +1,11 @@
+<template name="foodCellTemplate">
+  <view class="foodTap">
+  <image src="{{item.frontImg}}"></image>
+  <view class="con">
+    <text class="title">{{item.title}}</text>
+    <text class="score">评分:{{item.avgScore}}</text>
+    <text class="address">{{item.address}}</text>
+    <text class="avgprice">人均:￥{{item.avgPrice}}</text>
+    </view>
+</view>
+</template>

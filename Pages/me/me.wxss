@@ -1,0 +1,138 @@
+page{
+  background: #d8d8d8;
+}
+.container{
+  overflow: hidden;
+  height:400rpx;
+  background:#fff;
+  align-items: center;
+  position: relative;
+}
+.container .bigcir{
+  width:3000rpx;
+  height:3000rpx;
+  background: #0b384d;
+  border-radius: 1500rpx;
+  position: absolute;
+  bottom:0rpx;
+  left:50%;
+  margin-left: -1500rpx;
+  background: radial-gradient(#64737a,#477388);
+  overflow: hidden; 
+}
+.show{
+  display: block;
+  width: 350rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  z-index: 99;
+  position: absolute;
+  bottom:170rpx;
+  left:50%;
+  color:#fff;
+  border-radius: 10rpx;
+  background: orange;
+  margin-left: -175rpx;
+}
+.avatar{
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  z-index: 99;
+  position: absolute;
+  bottom:120rpx;
+  left:50%;
+  margin-left: -100rpx;
+}
+.hello{
+  display: block;
+  width:100rpx;
+  z-index: 99;
+  position: absolute;
+  bottom:40rpx;
+  color:#fff;
+  left:50%;
+  margin-left: -50rpx;
+}
+/* 我的订单 */
+.order{
+  width:100%;
+  height:120rpx;
+  background: #fff; 
+  margin-bottom: 20rpx;
+}
+.me_icon{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+  margin-top: 35rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-right: 15rpx;
+}
+.order_title{
+  display: block;
+  float:left;
+  height:120rpx;
+  line-height: 120rpx;
+  font-size: 30rpx;
+}
+.arrow{
+  display: block;
+  float:right;
+  height:120rpx;
+  line-height: 120rpx;
+  font-size: 60rpx;
+  color:#ccc;
+  margin-right: 20rpx;
+}
+/* 我的购物车 */
+.cartshop{
+  width:100%;
+  height:90rpx;
+  background: #fff; 
+  margin-bottom: 20rpx;
+}
+.cartshop .me_icon{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+  margin-top: 20rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-right: 15rpx;
+}
+ .cartshop .order_title{
+  display: block;
+  float:left;
+  height:90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+}
+.cartshop .arrow{
+  display: block;
+  float:right;
+  height:90rpx;
+  line-height: 90rpx;
+  font-size: 60rpx;
+  color:#ccc;
+  margin-right: 20rpx;
+}
+/* 技术支持 */
+.bottom{
+  height:89rpx;
+  background: #fff;
+  width:100%;
+  border-bottom: 1rpx solid #ccc;
+}
+.bottom text{
+  display: block;
+  font-size: 28rpx;
+  color:rgb(143, 140, 140);
+  text-align: center;
+  height:90rpx;
+  width:100%;
+  line-height:105rpx;
+}

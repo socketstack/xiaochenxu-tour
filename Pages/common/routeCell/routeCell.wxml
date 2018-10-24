@@ -1,0 +1,6 @@
+<template name="routeCellTemplate">
+  <view class="routeTap" wx:for="{{item}}" wx:key="{{index}}">
+  <image src="{{item.images[0].bigImageURL}}" wx:if="{{item.images[0].bigImageURL}}"></image>
+  <text wx:if="{{item.memo}}">{{item.memo}}</text>
+</view>
+</template>

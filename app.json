@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "Pages/index/index",
+    "Pages/me/me",
+    "Pages/me/youhui/youhui",
+    "Pages/me/tzhi/tzhi",
+    "Pages/me/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffa500",
+    "backgroundColor": "#cccccc",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#5bbe73",
+    "backgroundColor": "#fff",
+    "borderStyle": "while",
+    "list": [
+      {
+        "pagePath": "Pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_sel.png"
+      },
+      {
+        "pagePath": "Pages/me/me",
+        "text": "我的",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/me_sel.png"
+      }
+    ]
+  }
+}

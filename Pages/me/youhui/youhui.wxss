@@ -1,0 +1,39 @@
+.main{
+  width: 90%;
+  height:500rpx;
+  background: #00ff00;
+  margin:0 auto;
+}
+.title{
+  font-size: 50rpx;
+  display: block;
+  width:80%;
+  margin: 0 auto;
+  text-align: center;
+  height:100rpx;
+  line-height: 80rpx;
+}
+.con{
+  display: block;
+  text-align: center;
+}
+.rmb{
+  font-size:80rpx;
+  color:#ff0000;
+  margin-right: 10rpx;
+}
+.yuan{
+  font-size: 50rpx;
+}
+.button{
+  background: #fff;
+  border-radius: 20rpx;
+  display: block;
+  width:400rpx;
+  margin:0 auto;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size: 70rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}

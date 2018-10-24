@@ -1,0 +1,74 @@
+<import src="../common/main/main.wxml"/>
+<import src="../common/hotelCell/hotelCell.wxml"/>
+<import src="../common/routeCell/routeCell.wxml"/>
+<import src="../common/foodCell/foodCell.wxml"/>
+<!-- 搜索栏 -->
+<view class="search_box">
+  <form class="search">
+    <image src="../../images/icon/search.png"></image>
+    <input value="{{searchinput}}" bindfocus="focus" bindblur="blur"></input>
+  </form>
+</view>
+<!-- 轮播图 -->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" bindtap="swiperTap">
+    <swiper-item wx:for="{{slider}}" wx:key="{{index}}">
+        <image src="{{item.picUrl}}"></image>
+    </swiper-item>    
+</swiper>
+<!-- 菜单列表 -->
+<view class="menu">
+    <view class="item" data-current="0" catchtap="menuTap">
+      <view class="img strate">
+        <image src="../../images/icon/strate.png"></image>
+      </view>
+      <text class="{{menuTapCurrent==0? 'active':''}}">攻略</text>
+    </view>
+     <view class="item" data-current="1" catchtap="menuTap">
+       <view class="img hotel">
+        <image src="../../images/icon/hotel.png"></image>
+      </view>
+      <text class="{{menuTapCurrent==1? 'active':''}}">酒店</text>
+    </view>
+     <view class="item" data-current="2" catchtap="menuTap">
+       <view class="img route">
+        <image src="../../images/icon/route.png"></image>
+      </view>
+      <text class="{{menuTapCurrent==2? 'active':''}}">路线</text>
+    </view>
+     <view class="item" data-current="3" catchtap="menuTap">
+      <view class="img food">
+        <image src="../../images/icon/food.png"></image>
+      </view>
+      <text class="{{menuTapCurrent==3? 'active':''}}">美食</text>
+    </view>
+</view>
+<!-- 主内容 -->
+<scroll-view scroll-y bindscrolltolower="lower">
+  <!-- 攻略数据 -->
+  <view hidden="{{menuTapCurrent!='0'}}">
+    <block wx:for="{{tourlist}}" wx:key="{{index}}">
+      <template is="mainCellTemplate" data="{{item:item}}"></template>
+    </block>
+  </view>
+  <!-- 酒店数据 -->
+  <view hidden="{{menuTapCurrent!='1'}}">
+    <block wx:for="{{hotellist}}" wx:key="{{index}}">
+      <template is="hotelCellTemplate" data="{{item:item}}"></template>
+    </block>
+  </view>
+  <!-- 路线数据 -->
+  <view hidden="{{menuTapCurrent!='2'}}">
+    <block wx:for="{{ii}}" wx:key="{{index}}">
+      <view class="qizi"><image src="../../images/icon/qizi.png"></image></view>
+      <text class="routtitle">文艺{{index+1}}-{{item[0].name}}</text>
+      <template is="routeCellTemplate" data="{{item:item}}"></template>
+    </block>
+  </view>
+  <!-- 美食数据 -->
+  <view hidden="{{menuTapCurrent!='3'}}">
+    <block wx:for="{{foodlist}}" wx:key="{{index}}">
+      <template is="foodCellTemplate" data="{{item:item}}"></template>
+    </block>
+  </view>
+  <view class="all-nothave" wx:if="{{isshow}}">没有更多了</view>
+</scroll-view>

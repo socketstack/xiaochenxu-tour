@@ -1,0 +1,48 @@
+<!-- 获取用户头像 -->
+<view class="container">
+  <view class="bigcir">
+    <image class="avatar" src="{{avatarUrl}}" wx:if="{{!isShow}}"></image>
+    <button class="show" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" wx:if="{{isShow}}">点击获取头像</button>
+    <text class="hello">{{nickName}}</text>
+  </view>
+</view>
+<!-- 我的订单 -->
+<view class="order">
+  <image src="../../images/icon/me_order.png" class="me_icon"></image>
+  <text class="order_title">我的订单</text>
+  <text class="arrow">></text>
+</view>
+<!-- 优惠卷 -->
+<view class="cartshop" catchtap="showyouhui">
+  <image src="../../images/icon/me_gift.png" class="me_icon"></image>
+  <text class="order_title">优惠卷</text>
+  <text class="arrow">></text>
+</view>
+<!-- 地址管理 -->
+<view class="cartshop">
+  <image src="../../images/icon/me_address.png" class="me_icon"></image>
+  <text class="order_title">地址管理</text>
+  <text class="arrow">></text>
+</view>
+<!-- 我的收藏 -->
+<view class="cartshop">
+  <image src="../../images/icon/me_coll.png" class="me_icon"></image>
+  <text class="order_title">我的收藏</text>
+  <text class="arrow">></text>
+</view>
+<!-- 关于我们 -->
+<view class="cartshop" catchtap="showabout">
+  <image src="../../images/icon/me_cartshop.png" class="me_icon"></image>
+  <text class="order_title">关于我们</text>
+  <text class="arrow">></text>
+</view>
+<!-- 公告 -->
+<view class="cartshop" catchtap="showtzhi">
+  <image src="../../images/icon/me_tzhi.png" class="me_icon"></image>
+  <text class="order_title">公告</text>
+  <text class="arrow">></text>
+</view>
+<!-- 技术支持 -->
+<view class="bottom">
+  <text>技术支持@前端开发中心</text>
+</view>

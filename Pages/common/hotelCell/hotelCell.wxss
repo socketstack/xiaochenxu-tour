@@ -1,0 +1,65 @@
+.hotelTap{
+  width:746rpx;
+  height:300rpx;
+  margin-bottom: 20rpx;
+  border:2rpx solid #ccc;
+  background: #fff;
+}
+.hotelTap image{
+  display: block;
+  float: left;
+  width:55%;
+  height:296rpx;
+  border-radius: 15rpx;
+  margin-right: 3%;
+}
+.hotelTap .hotelname{
+  display: block;
+  float: left;
+  width:40%;
+  font-size:32rpx;
+  margin-top:20rpx;
+  height:70rpx;
+  line-height:70rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  color: #000;
+}
+.hotelTap .hotelscore{
+  display: block;
+  width:40%;
+  float: left;
+  font-size: 30rpx;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.hotelTap .hotelprice{
+  display: block;
+  width:40%;
+  float: left;
+  font-size: 30rpx;
+  color:#fe6506;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.hotelTap .hotelprice .small{
+  font-size: 20rpx;
+} 
+.hotelTap .reserve{
+  display: block;
+  float: right;
+  height:60rpx;
+  text-align:center;
+  line-height: 60rpx;
+  width:160rpx;
+  color:#fff;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+  background: #ff0000;
+}
+.hotelTap .sel{
+  background: #666;
+  /* color:#fff; */
+}

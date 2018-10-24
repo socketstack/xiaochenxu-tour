@@ -1,0 +1,8 @@
+<view class="main">
+  <text class="title">高级酒店满减卷</text>
+  <view class="con">
+    <text class="rmb">99.00</text>
+    <text class="yuan">元</text></view>
+  <text class="button">点击领取</text>
+</view>
+
